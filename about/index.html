@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>About Page</h1>
+    </header>
+    <section id="about">
+        <h2>Mi nombre es {{ name }} {{ lastName }}</h2>
+        <p>Tengo {{ age }} años, aunque en cinco años tendré {{ agePlusFive() }} años</p>
+        <p>Mi pelicula favorita es El Señor de los Anillos: el retorno del Rey, puedes ver informacion de ella <a v-bind:href="movieLink">aqui</a></p>
+        <p>Aqui te dare mi numero favorito, aunque sera un numero random {{ randomNumber() }}</p>
+    </section>
+</body>
+</html>
